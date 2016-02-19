@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Parallaxer Demo</title>
+	<link rel="stylesheet" href="../dist/css/parallaxer.css">
+
+	<style>
+		body {
+			padding: 10px 15px;
+		}
+
+		.parallaxer {
+			border: 1px solid #666;
+			width: 100%;
+			height: 600px;
+		}
+
+		.parallaxer .parallaxer--scroller .parallaxer--scroller--item {
+			color: #fff;
+			padding: 20px 30px;
+			background-color: rgba(0,0,0,0.25);
+			box-shadow: inset 0 0 80px rgba(0,0,0,0.7);
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Parallaxer Demo</h1>
+
+	<div id="my-parallaxer">
+		<div id="parallaxer-bg" class="parallaxer--bg"></div>
+		<div id="parallaxer-scroller" class="parallaxer--scroller">
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1654/25104912585_476f3d15f4_h.jpg">
+				<h2>Lorem ipsum 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1450/25019659481_9a0dab7433_h.jpg">
+				<h2>Lorem ipsum 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1720/24995918722_07cb992a29_h.jpg">
+				<h2>Lorem ipsum 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1699/24807550480_7a54e40fe3_h.jpg">
+				<h2>Lorem ipsum 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1632/25006673061_18984f00da_b.jpg">
+				<h2>Lorem ipsum 5</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1637/24992864062_102aebe8b8_b.jpg">
+				<h2>Lorem ipsum 6</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1484/24806096830_6da872e6fa_k.jpg">
+				<h2>Lorem ipsum 7</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+			<article class="parallaxer--scroller--item" data-img-src="https://farm2.staticflickr.com/1476/24484805203_4edaabb269_k.jpg">
+				<h2>Lorem ipsum 8</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ante massa. Aenean sodales elit ante, id dapibus massa placerat vel. Etiam vestibulum dapibus turpis, vitae tincidunt mauris cursus vel. Duis cursus augue sit amet tristique fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque.</p>
+			</article>
+		</div>
+	</div>
+
+	<script src="../dist/js/parallaxer.js"></script>
+	<script>		
+		var parallaxer = new Parallaxer( document.querySelector('#my-parallaxer') );
+			parallaxer.start();
+	</script>
+</body>
+</html>

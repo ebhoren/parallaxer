@@ -1,0 +1,28 @@
+{
+  "name": "parallax-grid-scroll",
+  "description": "A parallax horizontal grid scroller",
+  "main": "dist/index.amd.min.js",
+  "authors": [
+    "Dominic Mercier"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "parallax",
+    "grid",
+    "scroll",
+    "scroller",
+    "horizontal"
+  ],
+  "moduleType": "amd",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "minivents": "~2.0.1"
+  }
+}
